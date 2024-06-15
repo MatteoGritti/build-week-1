@@ -1,0 +1,131 @@
+/* IMPORT */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Outfit:wght@100..900&display=swap');
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* REGOLE CSS PER LA PAGINA */
+body {
+  height: 100vh;
+  background-image: url('./assets/bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.logo {
+  margin-top: 40px;
+  width: 150px;
+  height: 40px;
+}
+
+.container .title {
+  margin-top: 40px;
+  font-size: 60px;
+  font-family: outfit, sans-serif;
+}
+
+.container .bottom-title {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #d20094;
+  font-family: inter, sans-serif;
+}
+
+.container .text {
+  font-family: inter, sans-serif;
+}
+
+.container .list {
+  margin-top: 50px;
+  margin-left: 15px;
+  font-family: inter, sans-serif;
+}
+
+.list .space {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.check-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 125px;
+  font-family: inter, sans-serif;
+}
+
+.box {
+  background-color: none;
+  margin-right: 10px;
+}
+
+.text-checkbox {
+  margin-left: -70px;
+  font-family: inter, sans-serif;
+}
+
+/* BOTTONE CUSTOM */
+.custom-btn {
+  color: black;
+  width: 130px;
+  height: 40px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.btn-5 {
+  background: #00ffff;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+}
+
+.btn-5:hover {
+  background: transparent;
+  color: #21ebff;
+}
+
+.btn-5:before,
+.btn-5:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2px;
+  background: #21ebff;
+  width: 0;
+  box-shadow: 0 0 5px #21ebff, 0 0 5px #21ebff inset;
+  transition: 400ms ease all;
+}
+
+.btn-5:after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
+}
+
+.btn-5:hover:before,
+.btn-5:hover:after {
+  width: 100%;
+  transition: 800ms ease all;
+}
